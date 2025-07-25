@@ -9,14 +9,14 @@ from urllib.parse import unquote
 osn = os.name
 
 banner = f"""
-{Fore.RED}
+
                     ███████╗ █████╗ ████████╗███████╗██╗  ██╗
                     ██╔════╝██╔══██╗╚══██╔══╝██╔════╝██║  ██║
                     █████╗  ███████║   ██║   ███████╗███████║
                     ██╔══╝  ██╔══██║   ██║   ╚════██║██╔══██║
                     ██║     ██║  ██║   ██║   ███████║██║  ██║
                     ╚═╝     ╚═╝  ╚═╝   ╚══════╝╚═╝  ╚═╝     
-
+{Fore.RED}
                                    !!!ATTENTION!!!
            It is intended for legal use only. I am not responsible for it.
 {Fore.WHITE}
