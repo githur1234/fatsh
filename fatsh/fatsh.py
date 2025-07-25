@@ -40,7 +40,10 @@ with open("./config.json","r") as cfgr:
        json.dump(cfg,cfgr,indent=2)
       print("restarting...")
       sys.exit(0)
-vs=os.popen("curl ")
+vs=os.popen("curl https://raw.githubusercontent.com/githur1234/fatsh/refs/heads/main/vs.txt")
+vss=shell.getvs()
+if vs != vss:
+  print(Fore.GREEN+"New version released for fatsh"+Fore.WHITE)
 print(Fore.BLUE+"""
 [1] make bind shell
 [2] connect bind shell
