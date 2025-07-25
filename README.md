@@ -104,11 +104,13 @@ shell>> uname -a
 
 ```
 fatsh/
-├── fatsh.py
-├── shell.py
-├── config.json
-├── requirements.txt
-└── README.md
+├── fatsh/
+    ├── fatsh.py
+    ├── shell.py
+    ├── config.json
+    ├── requirements.txt
+├── README.md
+|__ vs.txt
 ```
 
 ---
