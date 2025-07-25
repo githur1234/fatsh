@@ -10,7 +10,6 @@
 * 📡 **Webhook URL’sine** otomatik olarak bağlantı URL’sini gönderir
 * ⚙️ Kurulum gerektirmez, çalıştır ve kullan
 * 🐚 Basit **bind shell komut arayüzü**
-* 🛠️ İlk kullanımda konfigürasyon dosyasını (`config.json`) otomatik oluşturur
 * 🔁 Versiyon kontrolü yaparak güncelleme olup olmadığını bildirir
 
 ---
