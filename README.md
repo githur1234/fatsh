@@ -33,7 +33,7 @@ bash ./setup.sh
 # Not:
 kurulumda setup.sh otomatik olarak py dosyasını çalıştırır diğer kullanımlarda ise
 ```bash
-    fatsh
+    bash fatsh
 ```
 komutunu çalıştırmanız yeterlidir
 
