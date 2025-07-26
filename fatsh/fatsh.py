@@ -54,10 +54,10 @@ print(Fore.BLUE + """
 """ + Fore.WHITE)
 
 ch = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
-with open(f"{current_dir}/config.json","r") as cfgr:
-  cfg=json.load(cfgr)
+
 if ch == "1":
-    global cfg
+    with open(f"{current_dir}/config.json","r") as cfgr:
+     cfg=json.load(cfgr)
     webhook = cfg["webhook"]
     auth_token = cfg["ngrok"]
     print("Bind shell path:")
