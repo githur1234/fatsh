@@ -28,10 +28,14 @@
 ```bash
 git clone https://github.com/githur1234/fatsh.git
 cd fatsh
-pip install -r requirements.txt
-export PATH=$PATH:./fatsh
-python3 fatsh.py
+bash ./setup.sh
 ```
+# Not:
+kurulumda setup.sh otomatik olarak py dosyasını çalıştırır diğer kullanımlarda ise
+```bash
+    fatsh
+```
+komutunu çalıştırmanız yeterlidir
 
 ### İlk kullanımda:
 
