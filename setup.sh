@@ -12,4 +12,4 @@ else
 fi
 echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$RC_FILE"
 source "$RC_FILE"
-python3 fatsh.py
+python3 "$CURRENT_DIR/fatsh.py"
