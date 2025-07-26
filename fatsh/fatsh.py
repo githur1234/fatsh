@@ -5,7 +5,7 @@ from colorama import Fore
 import sys
 import requests
 from urllib.parse import unquote
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
 osn = os.name
 
 banner = f"""
@@ -25,7 +25,7 @@ banner = f"""
 print(banner)
 
 # Config dosyasını oku
-with open("./config.json", "r") as cfgr:
+with open(f"{current_dir}/config.json", "r") as cfgr:
     cfg = json.load(cfgr)
     if cfg["fs"] is True:
         print(Fore.RED + "First use detected" + Fore.WHITE)
@@ -36,7 +36,7 @@ with open("./config.json", "r") as cfgr:
         cfg["webhook"] = wb
         cfg["ngrok"] = at
         cfg["fs"] = False
-        with open("./config.json", "w") as cfgr:
+        with open(f"{current_dir}/config.json", "w") as cfgr:
             json.dump(cfg, cfgr, indent=2)
         print("Rebooting...")
         sys.exit(0)
@@ -54,8 +54,11 @@ print(Fore.BLUE + """
 """ + Fore.WHITE)
 
 ch = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
-
+with open(f"{current_dir}/config.json","r") as cfgr:
+  global cfg
+  cfg=json.load(cfgr)
 if ch == "1":
+    global cfg
     webhook = cfg["webhook"]
     auth_token = cfg["ngrok"]
     print("Bind shell path:")
