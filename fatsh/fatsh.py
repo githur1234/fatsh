@@ -5,6 +5,10 @@ from colorama import Fore
 import sys
 import requests
 from urllib.parse import unquote
+import time
+
+
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 osn = os.name
 
@@ -42,7 +46,9 @@ with open(f"{current_dir}/config.json", "r") as cfgr:
         sys.exit(0)
 
 # Versiyon kontrolü
-vs = os.popen("curl -s https://raw.githubusercontent.com/githur1234/fatsh/refs/heads/main/vs.txt").read().strip()
+url = f"https://raw.githubusercontent.com/githur1234/fatsh/main/vs.txt?{int(time.time())}"
+response = requests.get(url)
+vs=response.text.strip()
 vss = shell.getvs().strip()
 if vs != vss:
     print(Fore.GREEN + "[+] New version released for fatsh" + Fore.WHITE)
