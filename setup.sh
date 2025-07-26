@@ -1,6 +1,6 @@
 #!/bin/bash
 pip install -r requirements.txt
-CURRENT_DIR="$(pwd)"
+CURRENT_DIR="$(pwd)/fatsh/"
 SHELL_NAME=$(basename "$SHELL")
 if [ "$SHELL_NAME" = "bash" ]; then
   RC_FILE="$HOME/.bashrc"
