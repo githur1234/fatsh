@@ -7,10 +7,10 @@ from pyngrok import ngrok
 import requests
 
 # Ngrok Auth Token
-AUTH_TOKEN = '{at}'
+AUTH_TOKEN = "{at}"
 
 # Webhook URL
-webhook = '{webhook}'
+webhook = "{webhook}"
 """+"""
 # Flask app başlat
 app = Flask(__name__)
