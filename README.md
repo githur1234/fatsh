@@ -14,7 +14,7 @@
 
 ---
 
-## 🧠 Nasıl Çalışır?
+##  Nasıl Çalışır?
 
 1. `fatsh`, `ngrok` üzerinden yerel 65534 portunu internete açar.
 2. Oluşan ngrok HTTP adresini, sizin belirlediğiniz **webhook URL’sine** POST eder.
@@ -29,6 +29,7 @@
 git clone https://github.com/githur1234/fatsh.git
 cd fatsh
 pip install -r requirements.txt
+export PATH=$PATH:./fatsh
 python3 fatsh.py
 ```
 
