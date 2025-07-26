@@ -55,7 +55,6 @@ print(Fore.BLUE + """
 
 ch = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
 with open(f"{current_dir}/config.json","r") as cfgr:
-  global cfg
   cfg=json.load(cfgr)
 if ch == "1":
     global cfg
