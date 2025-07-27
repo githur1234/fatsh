@@ -34,7 +34,7 @@ Eğer Windows kullanıyorsanız:
 ```bash
 git clone https://github.com/githur1234/fatsh.git
 cd fatsh
-bash ./setup.sh
+powershell -ExecutionPolicy Bypass -File <<setup.ps1 konumu>>
 ```
 # Not:
 kurulumda setup.sh otomatik olarak py dosyasını çalıştırır diğer kullanımlarda ise
