@@ -24,7 +24,13 @@
 ---
 
 ## ⚙️ Kurulum ve Kullanım
-
+Eğer Linux yada MacOs kullanıyorsanız:
+```bash
+git clone https://github.com/githur1234/fatsh.git
+cd fatsh
+bash ./setup.sh
+```
+Eğer Windows kullanıyorsanız:
 ```bash
 git clone https://github.com/githur1234/fatsh.git
 cd fatsh
