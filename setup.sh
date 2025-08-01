@@ -28,12 +28,12 @@ fi
 if ! grep -Fxq "export PATH=\"\$PATH:$CURRENT_DIR\"" "$RC_FILE"; then
   echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$RC_FILE"
   if [["$RC_FILE"=="$HOME/.zshrc"]]; then
-    if [-f "$HOME/.bashrc"]
+    if [-f "$HOME/.bashrc"]; then
      echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$HOME/.bashrc"
     fi
   fi
   if [["$RC_FILE"=="$HOME/.bashrc"]]; then
-    if [-f "$HOME/.zshrc"]
+    if [-f "$HOME/.zshrc"]; then
      echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$HOME/.zshrc"
     fi
   fi
