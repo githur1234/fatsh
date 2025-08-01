@@ -30,12 +30,7 @@ git clone https://github.com/githur1234/fatsh.git
 cd fatsh
 bash ./setup.sh
 ```
-Eğer Windows kullanıyorsanız:
-```bash
-git clone https://github.com/githur1234/fatsh.git
-cd fatsh
-powershell -ExecutionPolicy Bypass -File <<setup.ps1 konumu>>
-```
+
 # Not:
 kurulumda setup.sh otomatik olarak py dosyasını çalıştırır diğer kullanımlarda ise
 ```bash
@@ -127,8 +122,8 @@ fatsh/
 
 ## 📌 Yol Haritası (TODO)
 
-* [ ] TCP tünelleme desteği
-* [ ] Çoklu webhook desteği
+* [ ] Gui Desteği
+* [ ] Çoklu shell yönetimi
 * [ ] Reverse shell modülü
 * [ ] Güncelleme otomasyonu
 
@@ -139,4 +134,5 @@ fatsh/
 * [githur1234](https://github.com/githur1234)
 
 ---
-
+## Not:
+Yakında güçlü bir gui sistemi ile kullanımı ve fatsh beceriklerini geliştiriceğiz takip de kalın
