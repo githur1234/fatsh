@@ -1,5 +1,5 @@
 {
-  "fs": false,
+  "fs": true,
   "webhook": "nt",
   "ngrok": "nt"
 }
