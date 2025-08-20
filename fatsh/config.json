@@ -1,5 +1,5 @@
 {
-  "fs": true,
-  "webhook": "ns",
-  "ngrok":"ns"
+  "fs": false,
+  "webhook": "https://webhook.site/d39cebd1-8cb9-42fa-ba8b-56da7d7a5f79",
+  "ngrok": "2vV2ty3dktQHwNBl120pOxhHpXX_67Up6XKgNKyECA3mPpUap"
 }

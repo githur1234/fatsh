@@ -1,4 +1,27 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-python3 "$DIR/fatsh.py"
+G_FLAG=false
+
+
+while getopts "g" opt; do
+  case $opt in
+    g)
+      G_FLAG=true
+      ;;
+    \?)
+      echo "❌ Geçersiz seçenek: -$OPTARG"
+      exit 1
+      ;;
+  esac
+done
+
+# Durumu göster
+if $G_FLAG; then
+  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  python3 "$DIR/fatshgui.py"
+else
+  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  python3 "$DIR/fatsh.py"
+fi
+
+
