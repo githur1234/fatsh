@@ -135,11 +135,11 @@ fatsh/
 
 ## 📌 Yol Haritası (TODO)
 
-* [ ] Gui Desteği
+* [*] Gui Desteği
 * [ ] Çoklu shell yönetimi
 * [ ] Reverse shell modülü
 * [ ] Güncelleme otomasyonu
-
+* [ ] bluezero otomasyonu
 ---
 
 ## 🧑‍💻 Geliştirici
@@ -147,5 +147,10 @@ fatsh/
 * [githur1234](https://github.com/githur1234)
 
 ---
+
+Eğer bu anlatıcı ile alaklı mantık hatası bulduysanız yada eksiklikler varsa  bize bildirmekten çekinmeyin
+
+text ''' ffurkanbatum@gmail.com '''
+
 ## Not:
-Yakında güçlü bir gui sistemi ile kullanımı ve fatsh beceriklerini geliştiriceğiz takip de kalın
+Yakında çoklu shell yönetimi ile fatsh esneteceğiz takip de kalın
