@@ -77,7 +77,20 @@ Belirttiğiniz yola shell kodu yazılır.
 Ngrok URL'si girilir ve ardından direkt komut yazıp çalıştırabilirsiniz.
 
 ---
+### Config ayarları değişimi
+Bunun 2 yolu vardır 
+#### 1 Manuel(zor yol) 
+1. Projenin içinde 'fatsh/fatsh/config.json' 
+ Dosyasına gidin.
 
+2. Web hook yazan yere yeni Web hook adresinizi ngrok yerine ngrok authtokenini yazınız
+
+Not:Bu yöntem eğer webhook yada ngrok ypkenlerinden biri değişmediyse ve diğeri değişti ise tek yolunuzdur değişeni yenisi ile değiştirin yeter
+
+####2 Otomatik yol
+Açıklamaya gerek yok eğer gui kullanıyorsanız change Config ve yeni değerler, Eğer cli kullanıyorsanız 3. Seçenek ve yeni değerler
+
+Ve Config ayarlarınızı başarıyla değiştirdiniz 
 ## 🛡️ Uyarı
 
 > **Yasal uyarı**: Bu araç sadece eğitim ve test amaçlıdır. Yalnızca **izinli** sistemlerde kullanın. Geliştirici hiçbir illegal kullanımda sorumluluk kabul etmez.
