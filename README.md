@@ -85,7 +85,7 @@ Bunun 2 yolu vardır
 
 2. Web hook yazan yere yeni Web hook adresinizi ngrok yerine ngrok authtokenini yazınız
 
-Not:Bu yöntem eğer webhook yada ngrok ypkenlerinden biri değişmediyse ve diğeri değişti ise tek yolunuzdur değişeni yenisi ile değiştirin yeter
+Not:Bu yöntem eğer webhook yada ngrok değişkenlerinden biri değişmediyse ve diğeri değişti ise tek yolunuzdur değişeni yenisi ile değiştirin yeter
 
 #### 2 Otomatik yol
 Açıklamaya gerek yok eğer gui kullanıyorsanız change Config ve yeni değerler, Eğer cli kullanıyorsanız 3. Seçenek ve yeni değerler
