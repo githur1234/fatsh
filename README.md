@@ -87,7 +87,7 @@ Bunun 2 yolu vardır
 
 Not:Bu yöntem eğer webhook yada ngrok ypkenlerinden biri değişmediyse ve diğeri değişti ise tek yolunuzdur değişeni yenisi ile değiştirin yeter
 
-####2 Otomatik yol
+#### 2 Otomatik yol
 Açıklamaya gerek yok eğer gui kullanıyorsanız change Config ve yeni değerler, Eğer cli kullanıyorsanız 3. Seçenek ve yeni değerler
 
 Ve Config ayarlarınızı başarıyla değiştirdiniz 
@@ -150,7 +150,7 @@ fatsh/
 
 Eğer bu anlatıcı ile alaklı mantık hatası bulduysanız yada eksiklikler varsa  bize bildirmekten çekinmeyin
 
-[furkan@gmail.com](mailto:furkan@gmail.com) 
+[ffurkanbatum@gmail.com](mailto:furkan@gmail.com) 
 
 ## Not:
 Yakında çoklu shell yönetimi ile fatsh esneteceğiz takip de kalın
