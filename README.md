@@ -150,7 +150,7 @@ fatsh/
 
 Eğer bu anlatıcı ile alaklı mantık hatası bulduysanız yada eksiklikler varsa  bize bildirmekten çekinmeyin
 
-text ''' ffurkanbatum@gmail.com '''
+[furkan@gmail.com](mailto:furkan@gmail.com) 
 
 ## Not:
 Yakında çoklu shell yönetimi ile fatsh esneteceğiz takip de kalın
